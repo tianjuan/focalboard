@@ -4,9 +4,9 @@
 	"private": true,
 	"description": "",
 	"scripts": {
-		"pack": "NODE_ENV=production webpack --config webpack.js",
-		"packdev": "NODE_ENV=dev webpack --config webpack.dev.js",
-		"watchdev": "NODE_ENV=dev webpack --watch --config webpack.dev.js",
+		"pack": "cross-env NODE_ENV=production webpack --config webpack.js",
+		"packdev": "cross-env NODE_ENV=dev webpack --config webpack.dev.js",
+		"watchdev": "cross-env NODE_ENV=dev webpack --watch --config webpack.dev.js",
 		"test": "jest",
 		"updatesnapshot": "jest --updateSnapshot",
 		"check": "eslint --ext .tsx,.ts . --quiet --cache",
@@ -24,6 +24,7 @@
 		"updatesnapshots": "jest --updateSnapshot"
 	},
 	"dependencies": {
+		"cross-env": "^7.0.3",
 		"emoji-mart": "^3.0.1",
 		"imagemin-gifsicle": "^7.0.0",
 		"imagemin-mozjpeg": "^9.0.0",

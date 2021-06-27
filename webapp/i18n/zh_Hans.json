@@ -150,7 +150,7 @@
   "ViewHeader.export-failed": "导出失败!",
   "ViewHeader.filter": "筛选",
   "ViewHeader.group-by": "以{property}分组",
-  "ViewHeader.new": "新",
+  "ViewHeader.new": "创建新卡片",
   "ViewHeader.properties": "属性",
   "ViewHeader.search": "搜索",
   "ViewHeader.search-text": "搜索文本",
